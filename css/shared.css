@@ -7,6 +7,7 @@
 
 :root {
 	--heading-big-mobile: calc(1.4em + 1.5vw);
+	--whiteFont: rgb(224, 224, 224);
 }
 
 html,

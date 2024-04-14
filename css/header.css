@@ -13,19 +13,24 @@ header > .title-facharbeit {
 	text-shadow: 2px 2px 6px rgba(245, 245, 245, 0.5);
 }
 
+.title-background {
+	background-image: url("../assets/startingPagePicture.png");
+}
+
 .title-facharbeit h1 {
 	font-size: var(--heading-big-mobile);
 	word-spacing: 4px;
 	text-align: center;
 	width: 80%;
 	z-index: 2;
-	color: whitesmoke;
+	color: var(--whiteFont);
+	position: absolute;
 }
 
 nav {
 	width: 100vw;
 	height: 7.5vh;
-	background-color: gray;
+	background-color: rgb(0, 0, 0, 0.9);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -67,7 +72,7 @@ header ul {
 .menu-style-bar {
 	height: 3px;
 	width: 25px;
-	background-color: black;
+	background-color: var(--whiteFont);
 }
 
 .menu-container {
@@ -128,6 +133,10 @@ header .desktop-nav {
 	pointer-events: none;
 }
 
+#background-video {
+	height: 100vh;
+}
+
 @media (min-width: 800px) {
 	header .dropdown-menu {
 		width: 0;
@@ -153,13 +162,13 @@ header .desktop-nav {
 	}
 
 	.desktop-nav li > a {
-		color: white;
+		color: var(--whiteFont);
 		padding: 0.5em;
 	}
 
 	li a.active {
 		color: gray;
-		background-color: whitesmoke;
+		background-color: var(--whiteFont);
 		border-radius: 0.4em;
 	}
 
