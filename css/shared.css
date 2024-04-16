@@ -6,8 +6,9 @@
 }
 
 :root {
-	--heading-big-mobile: calc(1.4em + 1.5vw);
+	--heading-big-mobile: calc(1em + 2vw);
 	--whiteFont: rgb(224, 224, 224);
+	--whiteFontMuted: rgb(224, 224, 224, 0.5);
 }
 
 html,

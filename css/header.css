@@ -1,13 +1,12 @@
 header {
 	width: 100%;
-	height: 200vh;
 }
 
 header > .title-facharbeit {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	height: 100vh;
 	letter-spacing: 1px;
 	text-shadow: 2px 2px 6px rgba(245, 245, 245, 0.5);
@@ -21,10 +20,12 @@ header > .title-facharbeit {
 	font-size: var(--heading-big-mobile);
 	word-spacing: 4px;
 	text-align: center;
-	width: 80%;
+	width: 60%;
 	z-index: 2;
 	color: var(--whiteFont);
 	position: absolute;
+	left: 20%;
+	top: 30%;
 }
 
 nav {
@@ -134,7 +135,28 @@ header .desktop-nav {
 }
 
 #background-video {
-	height: 100vh;
+	filter: brightness(70%);
+	max-height: 100vh;
+}
+
+.facharbeit-werbung {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+	flex-direction: column;
+	position: absolute;
+	top: 60%;
+	left: 30%;
+	color: white;
+	font-size: calc(10px + 0.5vw);
+}
+
+.facharbeit-werbung a {
+	padding: 1em 3em;
+	background-color: var(--whiteFontMuted);
+	filter: brightness(70%);
+	border-radius: 0.5em;
 }
 
 @media (min-width: 800px) {
@@ -152,11 +174,11 @@ header .desktop-nav {
 	header .desktop-nav {
 		opacity: 1;
 		pointer-events: all;
-		font-size: 1.2em;
+		font-size: calc(10px + 0.8vw);
 		display: flex;
 		flex-direction: row;
 		height: 100%;
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 		justify-content: space-between;
 	}
@@ -176,5 +198,16 @@ header .desktop-nav {
 		color: gray;
 		background-color: rgba(245, 245, 245, 0.7);
 		border-radius: 0.4em;
+	}
+
+	.title-facharbeit {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+@media (min-width: 1400px) {
+	video#background-video {
+		max-height: none;
 	}
 }
