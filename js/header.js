@@ -15,10 +15,3 @@ menuButton.addEventListener("click", () => {
 
 const width = window.innerWidth;
 const titleFacharbeit = document.querySelector(".title-facharbeit");
-
-// if (width >= 800) {
-	const video =
-		'';
-	titleFacharbeit.innerHTML = video;
-	titleFacharbeit.classList.remove("title-background");
-// }
