@@ -11,6 +11,7 @@
 	--mutedBlack: rgba(0, 0, 0, 0.9);
 	--fontSizeSource: calc(8px + 0.5vw);
 	--fontSizeText: calc(1em + 0.5vw);
+	--fontSizeMedium: calc(1.3em + 1vw);
 	--fontSizeLargeText: calc(1.5em + 0.5vw);
 	--background: #f3f4f4;
 	--darkFont: #1e1e1e;
