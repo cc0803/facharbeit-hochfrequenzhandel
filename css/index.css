@@ -1,3 +1,51 @@
 main {
 	height: 200vh;
 }
+
+section {
+	width: 100%;
+}
+
+.section-one {
+}
+
+.section-one > div {
+	width: 80%;
+	margin: 5em auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: calc(10px + 1vw);
+}
+
+.text-eyecatcher {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-eyecatcher > span {
+	font-size: calc(4em + 5vw);
+	text-align: center;
+	position: relative;
+	font-weight: 300;
+}
+
+.eyecatcher-description {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: var(--fontSizeLargeText);
+}
+
+.img-container {
+	width: 100%;
+}
+
+.img-container > img {
+	width: 100%;
+}
+
+.img-container aside {
+	font-size: var(--fontSizeSource);
+	font-weight: 400;
+}

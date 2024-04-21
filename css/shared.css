@@ -7,9 +7,13 @@
 
 :root {
 	--heading-big-mobile: calc(1em + 2vw);
-	--whiteFont: rgb(224, 224, 224);
-	--whiteFontMuted: rgb(224, 224, 224, 0.5);
+	--backgroundMuted: #f3f4f47f;
 	--mutedBlack: rgba(0, 0, 0, 0.9);
+	--fontSizeSource: calc(8px + 0.5vw);
+	--fontSizeText: calc(1em + 0.5vw);
+	--fontSizeLargeText: calc(1.5em + 0.5vw);
+	--background: #f3f4f4;
+	--darkFont: #1e1e1e;
 }
 
 html,
@@ -18,4 +22,6 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
+	color: var(--darkFont);
+	background-color: var(--background);
 }

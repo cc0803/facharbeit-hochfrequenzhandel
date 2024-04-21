@@ -19,7 +19,7 @@ header > .title-facharbeit {
 
 .quelle-video {
 	background-color: var(--mutedBlack);
-	color: var(--whiteFont);
+	color: var(--background);
 	font-size: calc(10px + 0.4vw);
 	display: absolute;
 	bottom: 0;
@@ -32,7 +32,7 @@ header > .title-facharbeit {
 	text-align: center;
 	width: 60%;
 	z-index: 2;
-	color: var(--whiteFont);
+	color: var(--background);
 	position: absolute;
 	left: 20%;
 	top: 30%;
@@ -83,7 +83,7 @@ header ul {
 .menu-style-bar {
 	height: 3px;
 	width: 25px;
-	background-color: var(--whiteFont);
+	background-color: var(--background);
 }
 
 .menu-container {
@@ -159,12 +159,13 @@ header .desktop-nav {
 	top: 60%;
 	left: 30%;
 	color: white;
-	font-size: calc(10px + 0.5vw);
+	font-size: var(--fontSizeSource);
+	font-weight: 400;
 }
 
 .facharbeit-werbung a {
 	padding: 1em 3em;
-	background-color: var(--whiteFontMuted);
+	background-color: var(--backgroundMuted);
 	filter: brightness(70%);
 	border-radius: 0.5em;
 }
@@ -194,13 +195,13 @@ header .desktop-nav {
 	}
 
 	.desktop-nav li > a {
-		color: var(--whiteFont);
+		color: var(--background);
 		padding: 0.5em;
 	}
 
 	li a.active {
 		color: gray;
-		background-color: var(--whiteFont);
+		background-color: var(--background);
 		border-radius: 0.4em;
 	}
 
