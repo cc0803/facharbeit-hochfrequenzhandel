@@ -1,0 +1,11 @@
+:root {
+	--fontBlack: #1e1e1e;
+	--fontBlackActive: #292c2f;
+	--fontWhite: #f3f4f4;
+	--fontWhiteActive: #fff;
+}
+
+* {
+	font-family: "Canela Deck Web";
+	color: var(--fontWhite);
+}

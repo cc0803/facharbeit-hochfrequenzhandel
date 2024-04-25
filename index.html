@@ -11,26 +11,120 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="./css/index.css" />
+		<link rel="stylesheet" href="./css/shared.css" />
+		<!-- <script src="./js/index.js" defer></script> -->
 	</head>
 	<body>
 		<header>
-			<nav
-				class="navbar bg-dark border-bottom border-body"
-				data-bs-theme="dark"
-			>
-				<div class="container-xxl">
-					<ul class="navbar-nav d-flex flex-row">
-						<li class="nav-item p-2"><a href=""></a>Start</li>
-						<li class="nav-item p-2"><a href=""></a>Hedgefonds</li>
-						<li class="nav-item p-2">
-							<a href=""></a>Hochfrequenzhandel
-						</li>
-						<li class="nav-item p-2"><a href=""></a>Kritik</li>
-						<li class="nav-item p-2"><a href=""></a>Fazit</li>
-						<li class="nav-item p-2"><a href=""></a>Impressum</li>
-						<li class="nav-item p-2"><a href=""></a>Datenschutz</li>
-						<li class="nav-item p-2"><a href=""></a>Facharbeit</li>
-					</ul>
+			<nav class="navbar fixed-top">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#"
+						>Inwieweit stellen der Hochfrequenzhandel und Hedgefonds
+						ein Risiko für Privatinvestoren dar</a
+					>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasDarkNavbar"
+						aria-controls="offcanvasDarkNavbar"
+						aria-label="Toggle navigation"
+					>
+						<span class="icon-navbar d-flex flex-column"
+							><div class="navbar-stripe"></div>
+							<div class="navbar-stripe"></div>
+							<div class="navbar-stripe"></div
+						></span>
+					</button>
+					<div
+						class="offcanvas offcanvas-end text-bg-dark"
+						tabindex="-1"
+						id="offcanvasDarkNavbar"
+						aria-labelledby="offcanvasDarkNavbarLabel"
+					>
+						<div class="offcanvas-header">
+							<h5
+								class="offcanvas-title"
+								id="offcanvasDarkNavbarLabel"
+							>
+								Navigation
+							</h5>
+							<button
+								type="button"
+								class="btn-close btn-close-white"
+								data-bs-dismiss="offcanvas"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="offcanvas-body">
+							<ul
+								class="navbar-nav justify-content-end flex-grow-1 pe-3"
+							>
+								<li class="nav-item">
+									<a
+										class="nav-link active"
+										aria-current="page"
+										href="#"
+										>Startseite</a
+									>
+								</li>
+								<li class="nav-item dropdown">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										Themen
+									</a>
+									<ul
+										class="dropdown-menu dropdown-menu-dark"
+									>
+										<li>
+											<a class="dropdown-item" href="#"
+												>Hochfrequenzhandel</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#"
+												>Hedgefonds</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#"
+												>Kritik</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#"
+												>Fazit</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#"
+												>Interactiver Test</a
+											>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#"
+												>Facharbeit</a
+											>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Datenschutz</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Impressum</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</nav>
 		</header>
