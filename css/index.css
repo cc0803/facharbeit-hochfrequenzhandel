@@ -21,7 +21,7 @@ ul.navbar-nav.flex-row {
 }
 
 .navbar {
-	background-color: var(--fontBlack);
+	background-color: var(--fontBlackMuted);
 	color: var(--fontWhite);
 }
 
@@ -89,6 +89,10 @@ button.navbar-toggler:hover {
 .nav-item .nav-link:hover {
 	color: var(--fontWhiteActive);
 	background-color: var(--fontBlackActive);
+}
+
+video.container-fluid {
+	padding: 0;
 }
 
 @media (max-width: 800px) {
