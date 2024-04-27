@@ -1,102 +1,51 @@
-html {
-	width: 100vw;
-}
-
-.nav-item {
-	color: var(--fontWhite);
-}
-
-.navbar-brand {
-	text-wrap: wrap;
-	max-width: calc(100% - 100px);
-}
-
-ul.navbar-nav.flex-row {
-	justify-content: space-between;
-	width: 100%;
-}
-
-.container-fluid {
-	padding: 0 2.5%;
-}
-
-.navbar {
-	background-color: var(--fontBlackMuted);
-	color: var(--fontWhite);
-}
-
-a.navbar-brand {
-	color: var(--fontWhite) !important;
-	padding: 0 0.5em;
-	border-radius: 0.3em;
-	font-size: calc(0.75em + 1vw);
-}
-
-a.navbar-brand:hover {
-	color: var(--fontWhiteActive);
-	background-color: var(--fontBlackActive);
-}
-
-a.navbar-brand:active {
-	color: var(--fontWhite);
-}
-
-span.icon-navbar {
-	gap: 0.3em;
-	padding: 0.5em;
-}
-
-.navbar-stripe {
-	width: 30px;
-	height: 4px;
-	background-color: var(--fontWhite);
-	border-radius: 2px;
-}
-
-button.navbar-toggler {
-	border: 0 !important;
-}
-
-button.navbar-toggler:hover {
-	background-color: var(--fontBlackActive);
-	color: var(--fontWhiteActive);
-	border: 0;
-}
-
-.nav-link {
-	color: var(--fontWhite);
-	text-align: center;
-	border-radius: 0.3em;
-}
-
-.nav-link:focus {
-	color: var(--fontWhiteActive);
-}
-
-.nav-item .nav-link.show {
-	color: var(--fontWhiteActive);
-}
-
-.dropdown-item {
-	text-align: center;
-}
-
-.nav-item .nav-link.active {
-	color: var(--fontWhiteActive);
-	background-color: var(--fontBlackActive);
-}
-
-.nav-item .nav-link:hover {
-	color: var(--fontWhiteActive);
-	background-color: var(--fontBlackActive);
-}
-
 video.container-fluid {
 	padding: 0;
 }
 
-@media (max-width: 800px) {
-	button.navbar-toggler {
-		transform: scale(0.8);
+.overlay-heading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	gap: 1em;
+}
+
+.overlay-heading > p {
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.overlay-heading > h1 {
+	text-align: center;
+	font-size: 5em;
+	max-width: 15ch;
+	margin: 0 auto;
+}
+
+button.link-facharbeit {
+	font-size: 1.8em;
+	padding: 0.5em 1em;
+	width: 7em;
+	margin: 0 auto;
+	border-radius: 0.3em;
+	border: 0;
+	background-color: #f3f4f47f;
+	color: var(--fontBlack);
+}
+
+@media (max-width: 1200px) {
+	.overlay-heading {
+		font-size: 12px;
+	}
+
+	video.container-fluid {
+		height: 100vh;
+		object-fit: cover;
+	}
+}
+
+@media (max-width: 1000px) {
+	.overlay-heading {
+		font-size: 10px;
 	}
 }

@@ -10,3 +10,103 @@
 	font-family: "Canela Deck Web";
 	color: var(--fontWhite);
 }
+
+html {
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+.nav-item {
+	color: var(--fontWhite);
+}
+
+.navbar-brand {
+	text-wrap: wrap;
+	max-width: calc(100% - 100px);
+}
+
+ul.navbar-nav.flex-row {
+	justify-content: space-between;
+	width: 100%;
+}
+
+.container-fluid {
+	padding: 0 2.5%;
+}
+
+.navbar {
+	background-color: var(--fontBlackMuted);
+	color: var(--fontWhite);
+}
+
+a.navbar-brand {
+	color: var(--fontWhite) !important;
+	padding: 0 0.5em;
+	border-radius: 0.3em;
+	font-size: calc(0.75em + 1vw);
+}
+
+a.navbar-brand:hover {
+	color: var(--fontWhiteActive);
+	background-color: var(--fontBlackActive);
+}
+
+a.navbar-brand:active {
+	color: var(--fontWhite);
+}
+
+span.icon-navbar {
+	gap: 0.3em;
+	padding: 0.5em;
+}
+
+.navbar-stripe {
+	width: 30px;
+	height: 4px;
+	background-color: var(--fontWhite);
+	border-radius: 2px;
+}
+
+button.navbar-toggler {
+	border: 0 !important;
+}
+
+button.navbar-toggler:hover {
+	background-color: var(--fontBlackActive);
+	color: var(--fontWhiteActive);
+	border: 0;
+}
+
+.nav-link {
+	color: var(--fontWhite);
+	text-align: center;
+	border-radius: 0.3em;
+}
+
+.nav-link:focus {
+	color: var(--fontWhiteActive);
+}
+
+.nav-item .nav-link.show {
+	color: var(--fontWhiteActive);
+}
+
+.dropdown-item {
+	text-align: center;
+}
+
+.nav-item .nav-link.active {
+	color: var(--fontWhiteActive);
+	background-color: var(--fontBlackActive);
+}
+
+.nav-item .nav-link:hover {
+	color: var(--fontWhiteActive);
+	background-color: var(--fontBlackActive);
+}
+
+@media (max-width: 800px) {
+	button.navbar-toggler {
+		transform: scale(0.8);
+	}
+}
