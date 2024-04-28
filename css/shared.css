@@ -4,10 +4,12 @@
 	--fontBlackActive: #292c2f;
 	--fontWhite: #f3f4f4;
 	--fontWhiteActive: #fff;
+	--fontPink: rgba(247, 141, 168, 0.111);
 }
 
 * {
-	font-family: "Canela Deck Web";
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
 	color: var(--fontWhite);
 }
 
@@ -103,6 +105,10 @@ button.navbar-toggler:hover {
 .nav-item .nav-link:hover {
 	color: var(--fontWhiteActive);
 	background-color: var(--fontBlackActive);
+}
+
+a {
+	text-decoration: none;
 }
 
 @media (max-width: 800px) {

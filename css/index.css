@@ -1,5 +1,6 @@
 video.container-fluid {
 	padding: 0;
+	filter: grayscale(50%);
 }
 
 .overlay-heading {
@@ -32,9 +33,123 @@ button.link-facharbeit {
 	background-color: #f3f4f47f;
 	color: var(--fontBlack);
 }
+.source {
+	color: var(--fontWhite);
+	font-size: 0.8em;
+}
+
+.one {
+	background-color: rgba(0, 0, 0, 0.96);
+}
+
+.two {
+	background-color: var(--fontWhite);
+	padding: 10em 0;
+}
+
+.two .d-flex {
+	width: 80%;
+	gap: 2em;
+	margin: 0 auto;
+	flex-direction: row;
+}
+
+.two strong {
+	color: var(--fontBlack);
+}
+
+.two h2 {
+	color: var(--fontBlack);
+	font-size: 2.5em;
+	max-width: 60ch;
+}
+
+.two p {
+	font-size: 1.4em;
+	color: var(--fontBlack);
+	text-align: justify;
+	max-width: 60ch;
+}
+
+.three {
+	background-color: var(--fontBlack);
+}
+
+.grid-container {
+	width: 60%;
+	margin: 0 auto;
+	padding: 10em 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+	gap: 4em;
+}
+
+.grid-item {
+	width: 100%;
+	height: 35em;
+	overflow: hidden;
+}
+
+.grid-item .background-image {
+	height: 100%;
+	width: 100%;
+	transition: all 0.5s;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: grayscale(30%);
+}
+
+.image-container {
+	width: 100%;
+	height: 90%;
+	overflow: hidden;
+}
+
+.background-image.one {
+	background-image: url("../assets/server.jpg");
+}
+
+.grid-item:hover .background-image,
+.grid-item:focus .background-image {
+	transform: scale(1.1);
+}
+
+.grid-item .source {
+	color: var(--fontWhite);
+}
+
+.text-grid-item {
+	position: relative;
+	top: -50%;
+	background-color: var(--fontBlackMuted);
+	color: var(--fontWhite);
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+}
+
+.text-grid-item {
+	text-align: justify;
+}
+
+.background-image.two {
+	background-image: url("../assets/licht.jpg");
+}
+
+.background-image.three {
+	background-image: url("../assets/crash.jpg");
+}
+
+.three > h1 {
+	font-size: 4em;
+	text-align: center;
+	padding-top: 3em;
+}
 
 @media (max-width: 1200px) {
-	.overlay-heading {
+	html {
 		font-size: 12px;
 	}
 
@@ -45,7 +160,11 @@ button.link-facharbeit {
 }
 
 @media (max-width: 1000px) {
-	.overlay-heading {
+	html {
 		font-size: 10px;
+	}
+
+	.two .d-flex {
+		flex-direction: column;
 	}
 }
