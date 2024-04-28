@@ -190,6 +190,48 @@ button.link-facharbeit {
 	text-align: justify;
 }
 
+section.five {
+	background-image: url("../assets/abstrakt.jpg");
+	/* filter: grayscale(80%); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: var(--fontBlack);
+}
+
+.five + .source {
+	color: var(--fontBlack);
+}
+
+.five > h2 {
+	font-size: 4em;
+	padding: 2em 0 1em 0;
+	text-align: center;
+}
+
+.five .d-flex {
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.five .flex-item {
+	max-width: 20%;
+	color: var(--fontBlack);
+	padding-bottom: 4em;
+}
+
+.five p {
+	color: var(--fontBlack);
+	text-align: justify;
+	font-size: calc(10px + 0.625em);
+	font-weight: 300;
+}
+
+.five h4 {
+	text-align: center;
+	font-size: calc(12px + 0.7em);
+}
+
 @media (max-width: 1200px) {
 	html {
 		font-size: 12px;
@@ -220,5 +262,13 @@ button.link-facharbeit {
 
 	.four-grid > h2 {
 		grid-area: 1 / 1 / 2 / 2;
+	}
+
+	.five .d-flex {
+		flex-wrap: wrap;
+	}
+
+	.five .flex-item {
+		max-width: 40%;
 	}
 }
