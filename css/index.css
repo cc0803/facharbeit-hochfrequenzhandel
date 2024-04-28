@@ -142,10 +142,52 @@ button.link-facharbeit {
 	background-image: url("../assets/crash.jpg");
 }
 
-.three > h1 {
+.three > h2 {
 	font-size: 4em;
 	text-align: center;
 	padding-top: 3em;
+}
+
+.four {
+	background-color: var(--fontPink);
+	color: var(--fontBlack);
+}
+
+.four-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4em;
+	width: 60%;
+	margin: 0 auto;
+	padding: 4em 0;
+}
+
+.four-grid > h2 {
+	grid-area: 1 / 1/ 2 / 3;
+	color: var(--fontBlack);
+	font-size: 4em;
+	text-align: center;
+}
+
+.four img {
+	width: 100%;
+	max-height: 90%;
+	object-fit: cover;
+}
+
+.four .source {
+	color: var(--fontBlack);
+}
+
+.four h4 {
+	font-size: calc(10px + 1.625em);
+	color: var(--fontBlack);
+}
+
+.four p {
+	font-size: calc(10px + 0.625em);
+	color: var(--fontBlack);
+	text-align: justify;
 }
 
 @media (max-width: 1200px) {
@@ -157,6 +199,10 @@ button.link-facharbeit {
 		height: 100vh;
 		object-fit: cover;
 	}
+
+	.four-grid {
+		width: 80%;
+	}
 }
 
 @media (max-width: 1000px) {
@@ -166,5 +212,13 @@ button.link-facharbeit {
 
 	.two .d-flex {
 		flex-direction: column;
+	}
+
+	.four-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.four-grid > h2 {
+		grid-area: 1 / 1 / 2 / 2;
 	}
 }
