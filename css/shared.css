@@ -111,6 +111,48 @@ a {
 	text-decoration: none;
 }
 
+footer {
+	background-color: var(--fontBlack);
+	color: var(--fontWhite);
+	padding: 2em 2em 0.5em 2em;
+	font-weight: 300;
+}
+
+footer a {
+	color: var(--fontWhite);
+}
+
+footer a:hover {
+	color: var(--fontWhiteActive);
+	filter: brightness(50%);
+}
+
+.footer-container {
+	display: flex;
+}
+
+.footer-column {
+	flex: 1;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	text-align: center;
+	margin: 0.5em;
+}
+
+.horizontal-line {
+	width: 80%;
+	margin: 20px auto;
+	padding: 0.5em;
+	border-top: 1px solid var(--fontWhite);
+	text-align: center;
+}
+
 @media (max-width: 800px) {
 	button.navbar-toggler {
 		transform: scale(0.8);
