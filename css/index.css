@@ -232,6 +232,38 @@ section.five {
 	font-size: calc(12px + 0.7em);
 }
 
+footer {
+	background-color: var(--fontBlack);
+	color: var(--fontWhite);
+	padding: 20px;
+	font-weight: 300;
+}
+
+.footer-container {
+	display: flex;
+}
+
+.footer-column {
+	flex: 1;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	text-align: center;
+}
+
+.horizontal-line {
+	width: 80%;
+	margin: 20px auto;
+	padding: 0.5em;
+	border-top: 1px solid var(--fontWhite);
+	text-align: center;
+}
+
 @media (max-width: 1200px) {
 	html {
 		font-size: 12px;
