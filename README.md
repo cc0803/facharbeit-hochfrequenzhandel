@@ -22,6 +22,9 @@ https://www.mordorintelligence.com/de/industry-reports/global-hedge-fund-industr
 Bild von 3844328 auf Pixabay unter
 https://pixabay.com/photos/stock-trading-monitor-business-1863880/
 
+Bild von Ezequiel Octaviano auf Pixabay unter
+https://pixabay.com/de/photos/rechtliche-rechts-gerechtigkeit-5293008/
+
 ---
 
 Bild von Jason Goh auf Pixabay unter https://pixabay.com/de/photos/horizont-stadtbild-geb%C3%A4ude-255116/

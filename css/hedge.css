@@ -292,3 +292,107 @@ h6 {
 		font-size: 10px;
 	}
 }
+
+/* --------------------- */
+
+.section-three {
+	color: var(--fontBlack);
+	background-color: var(--fontWhite);
+	width: 100%;
+	overflow: hidden;
+}
+
+.section-container {
+	width: 80%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.5fr 1fr 10fr;
+	padding: 4em 0;
+	color: var(--fontBlack);
+}
+
+h2 {
+	margin: 1rem 0;
+	font-size: 2.25em;
+	grid-area: 2 / 1 / 3 / 3;
+	max-width: 60ch;
+	font-weight: 600;
+	color: var(--fontBlack);
+}
+
+.investment-principles {
+	height: 100%;
+	justify-content: space-between;
+	margin-right: 2rem;
+	margin-top: 4rem;
+}
+
+.principle-container {
+	height: 30%;
+	border-bottom: 1px solid var(--fontBlack);
+}
+
+.principle-container:last-of-type {
+	border-bottom: 0;
+}
+
+h5 {
+	margin-top: 0.5em;
+	font-size: 1.6em;
+	color: var(--fontBlack);
+}
+
+.section-three p {
+	margin-top: 0;
+	margin-bottom: 2rem;
+	text-align: justify;
+	color: var(--fontBlack);
+}
+
+.three-img-container {
+	width: 100%;
+	margin-top: 4rem;
+	overflow: hidden;
+}
+
+.img {
+	background-image: url("../assets/wage.jpg");
+	height: 90%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 2em;
+}
+
+.three-img-container .source {
+	color: var(--fontBlack);
+}
+
+h4.section-heading {
+	color: var(--fontBlack);
+	font-size: 1.25rem;
+	font-weight: 400;
+	text-align: center;
+	max-width: 100%;
+	text-transform: uppercase;
+	grid-area: 1 / 1/ 2 / 3;
+	margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+	.section-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.img {
+		height: 60vh;
+		margin: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.section-container {
+		width: 90%;
+	}
+}
