@@ -1,0 +1,398 @@
+section {
+	width: 100vw;
+	transform-style: preserve-3d;
+}
+
+body {
+	background-color: #111;
+}
+
+section.timeline-section {
+	margin-top: 10em;
+}
+
+h2 {
+	color: var(--fontWhite);
+	text-align: center;
+	font-size: 4em;
+}
+
+.introduction {
+	min-height: 80vh;
+	margin-top: 150px;
+	background-image: url("../images/History/LA.jpeg");
+	opacity: 0.92;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h4 {
+	max-width: 40ch;
+	align-self: flex-start;
+	font-size: calc(1rem + 0.4vw);
+}
+
+h6 {
+	max-width: 40ch;
+	font-size: calc(1rem + 0.4vw);
+	font-weight: lighter;
+	align-self: flex-start;
+}
+
+@media (max-width: 1200px) {
+	#header-container h1 {
+		font-size: calc(1.7rem + 1.4vw);
+	}
+}
+
+@media (max-width: 1000px) {
+	#header-container {
+		flex-direction: column;
+	}
+
+	#header-container h1 {
+		font-size: calc(2rem + 0.8vw);
+	}
+
+	.heading-container {
+		align-self: flex-start;
+	}
+}
+
+.container-timeline {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 100px 0;
+	background-color: #111;
+	margin: 0;
+}
+
+.timeline {
+	width: 80%;
+	height: auto;
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+.timeline::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background-color: gray;
+}
+
+.timeline img {
+	max-width: 100%;
+}
+.timeline ul {
+	list-style: none;
+	width: 72vw;
+}
+
+.timeline ul li {
+	padding: 1.5rem;
+	background-color: var(--fontBlack);
+	color: var(--fontWhite);
+	border-radius: 0.7rem;
+	margin-bottom: 6rem;
+}
+.timeline li::before {
+	content: "";
+	display: block;
+	position: relative;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: gray;
+	top: 0px;
+}
+
+@media (max-width: 768px) {
+	.timeline ul li::before {
+		left: calc(-8vw - 41px);
+	}
+}
+
+.timeline ul li:last-child {
+	margin-bottom: 0;
+}
+
+.timeline-content h1 {
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+.timeline-content p {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 300;
+	text-align: justify;
+}
+
+.timeline-content .date {
+	font-size: 12px;
+	font-weight: 300;
+	margin-bottom: 10px;
+	letter-spacing: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+	.timeline ul {
+		width: 100%;
+	}
+
+	.timeline:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 2px;
+		height: 100%;
+		background-color: gray;
+	}
+
+	.timeline ul li {
+		width: 50%;
+		position: relative;
+		margin-bottom: 50px;
+	}
+
+	.timeline ul li:nth-child(odd) {
+		float: left;
+		clear: right;
+		transform: translateX(-30px);
+		border-radius: 20px 0px 20px 20px;
+	}
+
+	.timeline ul li:nth-child(even) {
+		float: right;
+		clear: left;
+		transform: translateX(30px);
+		border-radius: 0px 20px 20px 20px;
+	}
+
+	.timeline ul li::before {
+		content: "";
+		position: absolute;
+		height: 20px;
+		width: 20px;
+		border-radius: 50%;
+		background-color: gray;
+		top: 0px;
+	}
+
+	.timeline ul li:nth-child(odd)::before {
+		transform: translate(50%, -50%);
+		right: -22px;
+	}
+
+	.timeline ul li:nth-child(even)::before {
+		transform: translate(-50%, -50%);
+		left: -22px;
+	}
+
+	.timeline-content .date {
+		position: absolute;
+		top: -30px;
+	}
+
+	.timeline ul li:hover::before {
+		background-color: aqua;
+	}
+}
+
+@media (max-width: 650px) {
+	section.introduction {
+		margin-top: 6rem;
+	}
+}
+
+.one {
+	min-height: 100%;
+	width: 100%;
+	background-color: var(--fontWhite);
+}
+
+.background-image {
+	background-image: url("../assets/stock.jpg");
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.text-flex-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.one h1 {
+	font-size: 6em;
+}
+
+.background-image .source {
+	justify-self: flex-end;
+}
+
+.description {
+	background-color: var(--fontPink);
+	color: var(--fontBlack);
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.one p {
+	max-width: 40%;
+	margin: 0 auto;
+	width: 60ch;
+	font-size: 1.6em;
+	color: var(--fontBlack);
+	padding: 4em 0;
+	text-align: justify;
+}
+
+@media (max-width: 1000px) {
+	.one {
+		font-size: 12px;
+	}
+
+	.one .description {
+		flex-direction: column;
+	}
+
+	.description p:first-of-type {
+		padding-bottom: 1em;
+	}
+
+	.description p:last-of-type {
+		padding-top: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.one {
+		font-size: 10px;
+	}
+}
+
+/* --------------------- */
+
+.section-three {
+	color: var(--fontBlack);
+	background-color: var(--fontWhite);
+	width: 100%;
+	overflow: hidden;
+}
+
+.section-container {
+	width: 80%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.5fr 1fr 10fr;
+	padding: 4em 0;
+	color: var(--fontBlack);
+}
+
+h2 {
+	margin: 1rem 0;
+	font-size: 2.25em;
+	grid-area: 2 / 1 / 3 / 3;
+	max-width: 60ch;
+	font-weight: 600;
+	color: var(--fontBlack);
+}
+
+.investment-principles {
+	height: 100%;
+	justify-content: space-between;
+	margin-right: 2rem;
+	margin-top: 4rem;
+}
+
+.principle-container {
+	height: 30%;
+	border-bottom: 1px solid var(--fontBlack);
+}
+
+.principle-container:last-of-type {
+	border-bottom: 0;
+}
+
+h5 {
+	margin-top: 0.5em;
+	font-size: 1.6em;
+	color: var(--fontBlack);
+}
+
+.section-three p {
+	margin-top: 0;
+	margin-bottom: 2rem;
+	text-align: justify;
+	color: var(--fontBlack);
+}
+
+.three-img-container {
+	width: 100%;
+	margin-top: 4rem;
+	overflow: hidden;
+}
+
+.img {
+	background-image: url("../assets/wage.jpg");
+	height: 90%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 2em;
+}
+
+.three-img-container .source {
+	color: var(--fontBlack);
+}
+
+h4.section-heading {
+	color: var(--fontBlack);
+	font-size: 1.25rem;
+	font-weight: 400;
+	text-align: center;
+	max-width: 100%;
+	text-transform: uppercase;
+	grid-area: 1 / 1/ 2 / 3;
+	margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+	.section-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.img {
+		height: 60vh;
+		margin: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.section-container {
+		width: 90%;
+	}
+}

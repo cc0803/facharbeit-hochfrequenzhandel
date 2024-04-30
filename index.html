@@ -4,160 +4,380 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Facharbeit Hochfrequenzhandel</title>
-		<link rel="stylesheet" href="./css/header.css" />
-		<link rel="stylesheet" href="./css/shared.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
 		<link rel="stylesheet" href="./css/index.css" />
-		<script src="./js/header.js" defer></script>
+		<link rel="stylesheet" href="./css/shared.css" />
+		<!-- <script src="./js/index.js" defer></script> -->
 	</head>
-	<header>
-		<nav>
-			<div class="menu-container">
-				<ul class="desktop-nav">
-					<li><a href="index.html" class="active">Startseite</a></li>
-					<li>
-						<a href="hochfrequenzhandel.html">Hochfrequenzhandel</a>
-					</li>
-					<li><a href="">Kritik</a></li>
-					<li><a href="">Fazit</a></li>
-					<li><a href="">Impressum</a></li>
-					<li><a href="">Datenschutzerklärung</a></li>
-					<li><a href="">Facharbeit</a></li>
-				</ul>
-				<div class="dropdown-menu">
-					<div class="menu-style-bar"></div>
-					<div class="menu-style-bar"></div>
-					<div class="menu-style-bar"></div>
+	<body>
+		<header>
+			<nav class="navbar fixed-top">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#"
+						>Inwieweit stellen der Hochfrequenzhandel und Hedgefonds
+						ein Risiko für Privatinvestoren dar</a
+					>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasDarkNavbar"
+						aria-controls="offcanvasDarkNavbar"
+						aria-label="Toggle navigation"
+					>
+						<span class="icon-navbar d-flex flex-column"
+							><div class="navbar-stripe"></div>
+							<div class="navbar-stripe"></div>
+							<div class="navbar-stripe"></div
+						></span>
+					</button>
+					<div
+						class="offcanvas offcanvas-end text-bg-dark"
+						tabindex="-1"
+						id="offcanvasDarkNavbar"
+						aria-labelledby="offcanvasDarkNavbarLabel"
+					>
+						<div class="offcanvas-header">
+							<h5
+								class="offcanvas-title"
+								id="offcanvasDarkNavbarLabel"
+							>
+								Navigation
+							</h5>
+							<button
+								type="button"
+								class="btn-close btn-close-white"
+								data-bs-dismiss="offcanvas"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="offcanvas-body">
+							<ul
+								class="navbar-nav justify-content-end flex-grow-1 pe-3"
+							>
+								<li class="nav-item">
+									<a
+										class="nav-link active"
+										aria-current="page"
+										href="#"
+										>Startseite</a
+									>
+								</li>
+								<li class="nav-item dropdown">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										Themen
+									</a>
+									<ul
+										class="dropdown-menu dropdown-menu-dark"
+									>
+										<li>
+											<a
+												class="dropdown-item"
+												href="./html/hochfrequenzhandel.html"
+												>Hochfrequenzhandel</a
+											>
+										</li>
+										<li>
+											<a
+												class="dropdown-item"
+												href="./html/hedgefonds.html"
+												>Hedgefonds</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#"
+												>Kritik</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#"
+												>Fazit</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#"
+												>Interactiver Test</a
+											>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#"
+												>Facharbeit</a
+											>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Datenschutz</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Impressum</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="mobile-nav hidden">
-				<button class="cancel">X</button>
-				<ul>
-					<li><a href="index.html">Startseite</a></li>
-					<li>
-						<a href="hochfrequenzhandel.html">Hochfrequenzhandel</a>
-					</li>
-					<li><a href="">Kritik</a></li>
-					<li><a href="">Fazit</a></li>
-					<li><a href="">Impressum</a></li>
-					<li><a href="">Datenschutzerklärung</a></li>
-					<li><a href="">Facharbeit</a></li>
-				</ul>
-			</div>
-		</nav>
-		<div class="title-facharbeit title-background">
-			<h1>
-				Inwieweit stellen der Hochfrequenzhandel und Hedgefonds ein
-				Risiko für Privatanleger dar?
-			</h1>
-			<video
-				src="./assets/startingPage.mp4"
-				autoplay
-				muted
-				loop
-				id="background-video"
-				poster="./assets/startingPagePicture.png"
-			></video>
-			<div class="facharbeit-werbung">
-				<h4>Link zur Facharbeit</h4>
-				<a href="">Facharbeit</a>
-			</div>
-		</div>
-		<div class="quelle-video">
-			Video von skarletmotion auf Pixabay unter
-			https://pixabay.com/de/videos/code-abstrakt-koordinaten-177227/
-		</div>
-	</header>
-	<main>
-		<section class="section-one">
-			<div>
-				<div class="text-eyecatcher"><span>55</span>%</div>
-				<div class="eyecatcher-description">
-					Anteil des Hochfrequenzhandels am Handelsvolumen des
-					Aktienmarktes 2010
-				</div>
-				<div class="img-container">
-					<img
-						src="./assets/server.jpg"
-						alt="Bild einer Serverfarm"
-					/>
-					<aside>
-						Bild von dlohner auf Pixabay unter
-						https://pixabay.com/de/photos/computer-server-gro%C3%9Frechner-kabel-2777254/
-					</aside>
-				</div>
-
-				<div class="text-container">
+			</nav>
+		</header>
+		<main>
+			<section class="one">
+				<video
+					class="container-fluid"
+					src="./assets/startingPage.mp4"
+					autoplay
+					muted
+					loop
+					poster="./assets/startingPagePicture.png"
+				></video>
+				<div
+					class="overlay-heading d-flex flex-column justify-content-center"
+				>
+					<h1>Entwicklung von Computern an der Börse</h1>
 					<p>
-						Eine Legende besagt, dass Nathan Rothschild nach der
-						Schlacht von Waterloo 1815 eine Brieftaube von Paris
-						nach London schickte. Diese Taube trug einen Brief an
-						seinen Vertreter mit dem Auftrag, britische
-						Staatsanleihen zu kaufen. Als dann wenig später die
-						offizielle Nachricht über die Niederlage Napoleons
-						London erreichte, vervielfachte sich der Wert der
-						Staatsanleihen und Rothschild machte ein Vermögen.
-						<br />
-						<br />
-						Diese Facharbeit beschäftigt sich mit der Frage, wie ein
-						solcher zeitlicher Vorsprung im Zeitalter der Computer
-						aussieht und welche Risiken dies für Privatanleger
-						darstellt.
+						Inwieweit stellen der Hochfrequenzhandel und Hedgefonds
+						ein Risiko für Privatanleger dar?
+					</p>
+					<button class="link-facharbeit">Facharbeit</button>
+				</div>
+				<div class="source">
+					Video von skarletmotion auf Pixabay unter
+					https://pixabay.com/de/videos/code-abstrakt-koordinaten-177227/
+				</div>
+			</section>
+			<section class="two">
+				<div class="d-flex">
+					<h2>
+						<strong>55%</strong> des täglichen Handelsvolumens aller
+						Aktien entfallen auf den Hochfrequenzhandel
+					</h2>
+					<p>
+						Der Hochfrequenzhandel ist für mehr als die Hälfte des
+						täglichen Handelsvolumens verantwortlich. Dennoch ist
+						den meisten Menschen der Begriff "Hochfrequenzhandel"
+						nicht geläufig.<br />
+						Die zugrundeliegende Facharbeit beschäftigt sich mit der
+						Frage wie diese Marktmacht Privatanleger beeinflusst.
 					</p>
 				</div>
+			</section>
+			<section class="three">
+				<h2>Der Hochfrequenzhandel</h2>
 				<div class="grid-container">
-					<div class="grid-element">
-						<div class="text-overlay">
-							<h4>Hedgefonds</h4>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur
-								adipisicing elit. Quod exercitationem tempora
-								laboriosam laudantium magni reprehenderit vitae
-								eos id sunt maxime aliquid consequatur libero,
-								nisi consequuntur, mollitia iure animi quisquam
-								eius?
-							</p>
-							<a href="" class="page-link">link</a>
-							<aside>
-								Bild von Leonardo Akiyama Leo Akiyama auf
-								Pixabay unter
-								https://pixabay.com/de/photos/nyc-new-york-stadt-urban-manhattan-4652143/
-							</aside>
+					<a class="grid-item" href="">
+						<div class="image-container">
+							<div class="background-image one"></div>
+							<div class="text-grid-item">
+								<h4>
+									Hochfrequenzhandel: Computer am Rand ihrer
+									Leistungsfähigkeit
+								</h4>
+								<p>
+									Der Hochfrequenzhandel ist eine
+									algorithmische Handelsstrategie. Das
+									Hauptziel hierbei ist es einen
+									Geschwindigkeitsvorteil gegenüber anderen
+									Marktteilnehmern auszunutzen, um so Renditen
+									zu erwirtschaften.
+								</p>
+							</div>
 						</div>
-						<div class="background-image one"></div>
+						<div class="source">
+							Bild von Michal Jarmoluk auf Pixabay unter
+							https://pixabay.com/de/photos/server-cyberspace-daten-kabel-2784908/
+						</div>
+					</a>
+					<a class="grid-item">
+						<div class="image-container">
+							<div class="background-image two"></div>
+							<div class="text-grid-item">
+								<h4>Handelsstrategien</h4>
+								<p>
+									Alle Handelsstrategien zielen darauf ab
+									einen Geschwindigkeitsvorteil auszunuten.
+									Die Verarbeitungsgeschwindigkeit einer
+									einzelnen Transaktion betrug im November
+									2022 rund 5 Nanosekunden. Also circa 600
+									Millionen mal schneller als der Mensch
+									blinzelt.
+								</p>
+							</div>
+						</div>
+						<div class="source">
+							Bild von Pexels auf Pixabay unter
+							https://pixabay.com/de/photos/licht-bewegung-abstrakt-linien-1834289/
+						</div>
+					</a>
+					<a class="grid-item">
+						<div class="image-container">
+							<div class="background-image three"></div>
+							<div class="text-grid-item">
+								<h4>Kritik</h4>
+								<p>
+									Durch den großen Marktanteil des
+									Hochfrequenzhandels und die
+									undurchsichtigkeit seiner Aktivitäten gibt
+									es viel Kritik. <br />
+									Die Hauptkritikpunkte sind Flash Crashes und
+									illegale Handelsstrategien.
+								</p>
+							</div>
+						</div>
+						<div class="source">
+							Bild von Oleg Gamulinskii auf Pixabay unter
+							https://pixabay.com/de/photos/analyse-bankwesen-makler-gesch%C3%A4ft-4937349/
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="four">
+				<div class="four-grid">
+					<h2>Hedgefonds</h2>
+					<div class="image-container">
+						<img src="./assets/frankfurt.jpg" alt="" />
+						<div class="source">
+							Bild von Leonhard Niederwimmer auf Pixabay unter
+							https://pixabay.com/de/photos/geb%C3%A4ude-horizont-stadt-7092752/
+						</div>
 					</div>
-					<div class="grid-element">
-						<h4>Hochfrequenzhandel</h4>
+					<div class="text-container">
+						<h4>Hedgefonds verstehen</h4>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing
-							elit. Provident, saepe? Dolores eum ipsum
-							accusantium delectus reprehenderit. Rem minus
-							adipisci delectus incidunt ipsam, blanditiis
-							perspiciatis, obcaecati saepe, alias quod ut
-							voluptas?
+							In der Öffentlichkeit werden Hedgefonds oft als die
+							Verkörperung alles schlechtem in unserem
+							Finanzsystem gesehen. Wirklich verstanden werden sie
+							aber kaum.
+							<br />
+							Grundsätzlich sind Hedgefonds Investmentvermögen die
+							kaum reguliert sind. Dies bedeutet, dass Hedgefonds
+							andere Finanzinstrument nutzen können als ein
+							herkömmlicher Anlagefonds.<br />
+							Dies ist automatisch mit einem höheren Risiko, aber
+							auch mit einer höheren Renditechance verbunden. Aus
+							diesem Grund sind Hedgefonds der breiten
+							Öffentlichkeit nicht zugänglich. Nur ausgewählte
+							Investoren die sich entweder über ihre Erfahrung,
+							zum Beispiel ein Beruf in der Finanzbranche, oder
+							ihr Kapital, die Mindestanlage bei Hedgefonds
+							beträgt in der Regel 500.000$, qualifizieren, dürfen
+							investieren.
 						</p>
-						<a href="" class="page-link">link</a>
-						<aside>
-							alksdjföoaisjdofjqöou p92u3p9ru po2384up2oih3poru23
-						</aside>
-						<div class="background-image"></div>
 					</div>
-					<div class="grid-element">
-						<h4>Gefahr für Privatanleger?</h4>
+					<div class="text-container">
+						<h4>Marktunabhängige Renditen</h4>
 						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing
-							elit. Nemo quaerat quod reiciendis, repellat minima
-							odit veritatis architecto ducimus sint facere non
-							dolorum aliquam modi illum, alias hic dignissimos.
-							Rem, maiores?
+							Die Entstehung der Hedgefonds geht auf die
+							Einführung der martkneutralen Investmentstrategie
+							zurück. Zwar bleibt das primäre Ziel von Hedgefonds
+							unabhängig der Marktlage Renditen zu erwirtschaften,
+							jedoch entstehen auch vermehrt Hedgefonds mit dem
+							einzigen Ziel Renditen über dem Marktdurchschnitt zu
+							erwirtschaften.<br />
+							Zur Verwirklichung diser neuen Zielsetzung nutzen
+							Hedgefonds vermehrt den Hochfrequenzhandel und
+							aktive Strategien, um direkt in den Markt eingreifen
+							zu können. <br />
+							In der zugrundeliegenden Facharbeit werden
+							Hedgefonds vorallem im Rahmen ihre Aktivitäten im
+							Hochfrequenzhandel dargestellt. Aus diesem Grund
+							wird nicht näher andere Strategien der Hedgefonds
+							eingegangen.
 						</p>
-						<a href="" class="page-link"></a>
-						<aside></aside>
-						<div class="background-image"></div>
+					</div>
+					<div class="image-container">
+						<img src="./assets/NYStockmarket.jpg" alt="" />
+						<div class="source">
+							Bild von DEZALB auf Pixabay unter
+							https://pixabay.com/de/photos/vereinigte-staaten-new-york-1184973/
+						</div>
 					</div>
 				</div>
+			</section>
+			<section class="five">
+				<h2>Zielsetzung</h2>
+				<div class="d-flex">
+					<div class="flex-item">
+						<h4>Anlagestrategien</h4>
+						<p>
+							Zunächst findet eine Betrachtung der
+							Anlagestrategien des Hochfrequenzhandels statt, um
+							diese Erkenntnisse dann später auf die Problemfrage
+							zu beziehen.
+						</p>
+					</div>
+					<div class="flex-item">
+						<h4>Kritikische Betrachtung</h4>
+						<p>
+							Die Anlagestrategien sollen im Hinblick auf ihren
+							rechtlichen Status und Kritik anderer Stellen
+							betrachtet werden.
+						</p>
+					</div>
+					<div class="flex-item">
+						<h4>Bedeutung für Privatanleger</h4>
+						<p>
+							Nach der kritischen Betrachtung der Anlagestrategien
+							werden diese sowie grundsätzliche systemische
+							Vorteile des Hochfrequenzhandels aus der Sicht der
+							Privatanleger eingeordnet.
+						</p>
+					</div>
+					<div class="flex-item">
+						<h4>Fazit</h4>
+						<p>
+							Schließlich werden die gewonennen Erkenntnisse
+							genutzt um die Frage: Inwieweit tellen der
+							Hochfrequenzhandel und Hedgefonds ein Risiko für
+							Privatanleger dar, zu beantworten.
+						</p>
+					</div>
+				</div>
+			</section>
+			<div class="source">
+				Bild von Pexels auf Pixabay unter
+				https://pixabay.com/de/photos/abstrakt-architektur-geb%C3%A4ude-zement-1851115/
 			</div>
-		</section>
-	</main>
-	<footer></footer>
-	<body></body>
+		</main>
+		<footer>
+			<div class="footer-container">
+				<div class="footer-column">
+					<ul>
+						<li><a href="">Impressum</a></li>
+						<li><a href="">Datenschutzerklärung</a></li>
+						<li><a href="">Quellenverzeichnis</a></li>
+						<li><a href="">Facharbeit</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<ul>
+						<li>Simon Geldbach</li>
+						<li>+49 0174 2104968</li>
+						<li>simongeldbach@gmail.com</li>
+					</ul>
+				</div>
+			</div>
+			<div class="horizontal-line">
+				Inwieweit stellen der Hochfrequenzhandel und Hedgefonds ein
+				Risiko für Privatanleger dar?
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
