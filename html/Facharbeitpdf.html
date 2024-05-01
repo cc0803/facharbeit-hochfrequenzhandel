@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Facharbeit PDF</title>
+		<link rel="stylesheet" href="../css/shared.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<style>
+			main {
+				height: 100vh;
+				width: 100vw;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			iframe {
+				height: 80%;
+				width: 80%;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar fixed-top">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="../index.html"
+						>Inwieweit stellen der Hochfrequenzhandel und Hedgefonds
+						ein Risiko für Privatinvestoren dar</a
+					>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasDarkNavbar"
+						aria-controls="offcanvasDarkNavbar"
+						aria-label="Toggle navigation"
+					>
+						<span class="icon-navbar d-flex flex-column"
+							><div class="navbar-stripe"></div>
+							<div class="navbar-stripe"></div>
+							<div class="navbar-stripe"></div
+						></span>
+					</button>
+					<div
+						class="offcanvas offcanvas-end text-bg-dark"
+						tabindex="-1"
+						id="offcanvasDarkNavbar"
+						aria-labelledby="offcanvasDarkNavbarLabel"
+					>
+						<div class="offcanvas-header">
+							<h5
+								class="offcanvas-title"
+								id="offcanvasDarkNavbarLabel"
+							>
+								Navigation
+							</h5>
+							<button
+								type="button"
+								class="btn-close btn-close-white"
+								data-bs-dismiss="offcanvas"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="offcanvas-body">
+							<ul
+								class="navbar-nav justify-content-end flex-grow-1 pe-3"
+							>
+								<li class="nav-item">
+									<a
+										class="nav-link active"
+										aria-current="page"
+										href="../index.html"
+										>Startseite</a
+									>
+								</li>
+								<li class="nav-item dropdown">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										Themen
+									</a>
+									<ul
+										class="dropdown-menu dropdown-menu-dark"
+									>
+										<li>
+											<a class="dropdown-item" href="#"
+												>Hochfrequenzhandel</a
+											>
+										</li>
+										<li>
+											<a
+												class="dropdown-item"
+												href="./hedgefonds.html"
+												>Hedgefonds</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#"
+												>Kritik</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#"
+												>Fazit</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#"
+												>Interactiver Test</a
+											>
+										</li>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#"
+												>Facharbeit</a
+											>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Datenschutz</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Impressum</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<iframe src="../assets/Facharbeit.pdf" frameborder="0"></iframe>
+		</main>
+		<footer>
+			<div class="footer-container">
+				<div class="footer-column">
+					<ul>
+						<li><a href="">Impressum</a></li>
+						<li><a href="">Datenschutzerklärung</a></li>
+						<li><a href="">Quellenverzeichnis</a></li>
+						<li><a href="">Facharbeit</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<ul>
+						<li>Simon Geldbach</li>
+						<li>+49 0174 2104968</li>
+						<li>simongeldbach@gmail.com</li>
+					</ul>
+				</div>
+			</div>
+			<div class="horizontal-line">
+				Inwieweit stellen der Hochfrequenzhandel und Hedgefonds ein
+				Risiko für Privatanleger dar?
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
