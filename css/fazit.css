@@ -169,8 +169,7 @@ h4.section-heading {
 	padding: 4rem 0;
 	gap: 3em;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 5fr 5fr;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .portfolio-company p {
@@ -180,8 +179,6 @@ h4.section-heading {
 }
 
 .portfolio-company {
-	height: 100%;
-	width: 100%;
 	border-radius: 2em;
 	background-color: var(--fontWhite);
 }
@@ -199,6 +196,11 @@ h4.section-heading {
 .section-four img {
 	width: 100%;
 	height: 15rem;
+}
+.section-four h4 {
+	padding-top: 2em;
+	text-align: center;
+	font-size: calc(1rem + 1vw);
 }
 
 .not-visible {
@@ -253,8 +255,6 @@ h4.section-heading {
 
 	section.section-four .grid-container {
 		width: 90%;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 5fr 5fr 5fr;
 	}
 
 	section.section-four .section-heading {
@@ -305,8 +305,6 @@ h4.section-heading {
 
 	section.section-four .grid-container {
 		width: 70%;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr repeat(6, 5fr);
 	}
 
 	.section-four .section-heading {
