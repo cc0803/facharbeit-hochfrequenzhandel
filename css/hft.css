@@ -130,6 +130,29 @@ i {
 	color: var(--fontBlack);
 }
 
+.three {
+	width: 100%;
+	background-color: var(--fontBlack);
+	padding: 4em 0;
+}
+
+.carousel-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.carousel-item > p {
+	padding: 1em;
+	font-size: 1em;
+	text-align: justify;
+	width: 70%;
+	height: 80%;
+	background-color: var(--fontWhite);
+	border-radius: 1em;
+	font-family: "Times New Roman", Times, serif;
+}
+
 @media (max-width: 1200px) {
 	.title {
 		font-size: 5em;
@@ -140,11 +163,19 @@ i {
 	.title {
 		font-size: 4em;
 	}
+
+	.carousel-item > p {
+		font-size: 0.8em;
+	}
 }
 
 @media (max-width: 600px) {
 	.title {
 		font-size: 2.5em;
+	}
+
+	.carousel-item > p {
+		font-size: 0.6em;
 	}
 }
 
