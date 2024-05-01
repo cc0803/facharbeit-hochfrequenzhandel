@@ -59,7 +59,7 @@ section {
 	overflow: hidden;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 0.5fr 1fr 10fr;
+	grid-template-rows: 0.5fr 1fr 12fr;
 	padding: 4em 0;
 }
 
@@ -135,6 +135,10 @@ h1 {
 	color: var(--fontBlack);
 }
 
+i {
+	color: var(--fontBlack);
+}
+
 .source {
 	color: var(--fontBlack);
 }
@@ -170,7 +174,22 @@ h4.section-heading {
 }
 
 .portfolio-company p {
-	color: var(--fontWhite);
+	color: var(--fontBlack);
+	text-align: justify;
+	margin: 1em;
+}
+
+.portfolio-company {
+	height: 100%;
+	width: 100%;
+	border-radius: 2em;
+	background-color: var(--fontWhite);
+}
+
+.portfolio-company h3 {
+	color: var(--fontBlack);
+	text-align: center;
+	margin: 0.5em;
 }
 
 .section-four .section-heading {
@@ -219,7 +238,7 @@ h4.section-heading {
 		grid-template-columns: 1fr;
 		grid-template-rows: 0.3fr 1fr 4fr 4fr;
 	}
-	section.section-three img {
+	section.section-three .img-container {
 		grid-area: 3 / 1 / 4 / 2;
 	}
 
