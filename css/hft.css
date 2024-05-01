@@ -46,8 +46,88 @@ body {
 section {
 	font-size: 2rem;
 	padding: 2rem;
-	background-color: #333;
-	color: white;
+	background-color: var(--fontWhite);
+	color: var(--fontBlack);
+	width: 100%;
+}
+
+/* Section two */
+.two h1 {
+	font-size: 3em;
+	color: var(--fontBlack);
+	text-align: center;
+	padding-bottom: 0.5em;
+}
+
+.section-container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 6em 0;
+}
+
+p {
+	margin: 0 auto;
+	max-width: 70ch;
+	text-align: justify;
+	color: var(--fontBlack);
+}
+
+.explanation-container {
+	margin-top: 3em;
+	width: 100%;
+	justify-content: space-between;
+	gap: 2em;
+}
+
+.explanation {
+	height: 100%;
+	display: flex;
+	justify-content: stretch;
+	flex-direction: column;
+	margin-bottom: auto;
+}
+
+h3 {
+	font-size: 2rem;
+	padding-bottom: 1.6em;
+	border-bottom: 2px solid var(--fontBlack);
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	height: 130px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--fontBlack);
+}
+
+.explanation-container p {
+	margin: 1em 0.5em;
+	font-size: 1.2rem;
+	color: var(--fontBlack);
+}
+
+.flex-center-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.flex-center-column {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+i {
+	color: var(--fontBlack);
+}
+
+.source-one {
+	background-color: var(--fontWhite);
+	color: var(--fontBlack);
 }
 
 @media (max-width: 1200px) {
@@ -65,5 +145,23 @@ section {
 @media (max-width: 600px) {
 	.title {
 		font-size: 2.5em;
+	}
+}
+
+@media (max-width: 1000px) {
+	section.two {
+		font-size: 0.8em;
+	}
+
+	.two h1 {
+		font-size: 3.5em;
+	}
+
+	.two p {
+		font-size: 1.4em;
+	}
+
+	.explanation-container {
+		flex-direction: column;
 	}
 }
