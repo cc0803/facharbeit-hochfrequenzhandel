@@ -17,6 +17,10 @@ h2 {
 	font-size: 4em;
 }
 
+.section-three p {
+	font-size: 1.4em;
+}
+
 .introduction {
 	min-height: 80vh;
 	margin-top: 150px;
