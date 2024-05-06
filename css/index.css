@@ -23,6 +23,10 @@ video.container-fluid {
 	margin: 0 auto;
 }
 
+.link-facharbeit > a {
+	color: var(--fontWhite);
+}
+
 button.link-facharbeit {
 	font-size: 1.8em;
 	padding: 0.5em 1em;
