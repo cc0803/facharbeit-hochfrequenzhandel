@@ -154,6 +154,10 @@ li {
 	text-align: center;
 }
 
+h5.offcanvas-title {
+	color: var(--fontWhite) !important;
+}
+
 @media (max-width: 800px) {
 	button.navbar-toggler {
 		transform: scale(0.8);
