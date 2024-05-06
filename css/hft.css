@@ -205,6 +205,11 @@ section.four {
 	width: 30ch;
 }
 
+.five p.source {
+	width: 100%;
+	max-width: 100%;
+}
+
 @media (max-width: 1200px) {
 	.title {
 		font-size: 5em;

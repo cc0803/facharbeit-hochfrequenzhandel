@@ -46,6 +46,7 @@ a.navbar-brand {
 	padding: 0 0.5em;
 	border-radius: 0.3em;
 	font-size: calc(0.75em + 1vw);
+	max-width: calc(100% - 100px);
 }
 
 a.navbar-brand:hover {
@@ -80,7 +81,7 @@ button.navbar-toggler:hover {
 }
 
 .nav-link {
-	color: var(--fontWhite);
+	color: var(--fontWhite) !important;
 	text-align: center;
 	border-radius: 0.3em;
 }
